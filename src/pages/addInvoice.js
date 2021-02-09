@@ -31,7 +31,7 @@ const AddInvoice = () => {
     const history = useHistory();
 
     useEffect(() => {
-        fetch("http://localhost:3001/getUser/" + cemail)
+        fetch("https://invoice-server-backend.herokuapp.com/getUser/" + cemail)
             .then((res) => res.json())
             .then((data) => setProfileDate(data.user))
             .catch(console.error);

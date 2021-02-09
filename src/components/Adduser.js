@@ -28,7 +28,7 @@ const AddUser = () => {
             setAddress("");
             setEmail("");
             //let temp = await fetch("https://react-login-server.herokuapp.com/signup", {
-            let temp = await fetch("http://localhost:3001/adduser", {
+            let temp = await fetch("https://invoice-server-backend.herokuapp.com/adduser", {
                 method: "POST",
                 body: JSON.stringify(data),
                 headers: {

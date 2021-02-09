@@ -11,7 +11,7 @@ const Valid = () => {
                 Id: id
             }
             //fetch("https://react-login-server.herokuapp.com/valid", {
-            fetch("http://localhost:3001/valid", {
+            fetch("https://invoice-server-backend.herokuapp.com/valid", {
                 method: "PUT",
                 body: JSON.stringify(data),
                 headers: {

@@ -11,7 +11,7 @@ const Dashboard = () => {
     const [profileData, setProfileDate] = useState({});
 
     useEffect(() => {
-        fetch("http://localhost:3001/profile/" + id)
+        fetch("https://invoice-server-backend.herokuapp.com/profile/" + id)
             .then((res) => res.json())
             .then((data) => setProfileDate(data))
             .catch(console.error);

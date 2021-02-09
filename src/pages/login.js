@@ -17,7 +17,7 @@ const Login = () => {
     useEffect(() => {
         if (localStorage.getItem('capstone'))
             history.push(routes.dashboard.replace(":id", localStorage.getItem('capstone')));
-        fetch("http://localhost:3001/login/" + email + "/" + pwd + "/" + type)
+        fetch("https://invoice-server-backend.herokuapp.com/login/" + email + "/" + pwd + "/" + type)
             .then((res) => res.json())
             .then((data) => setDat(data))
             .catch(console.error);
